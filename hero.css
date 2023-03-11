@@ -132,3 +132,8 @@
     }
 
 }
+@media (max-width: 500px){
+    .picture img{
+        height: 150px;
+    }
+}
