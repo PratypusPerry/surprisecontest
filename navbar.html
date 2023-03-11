@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <script src="./navbar.js"></script> -->
+    <title>Stinger</title>
+</head>
+<body>
+    <nav class="navBar">
+        <img src="./hostinger.png" class="logo" height="60px" >
+        <ul class="navTools">
+            <input type="checkbox" id="checkbox_toggle" />
+                  <label for="checkbox_toggle" class="hamburger"><span class="material-symbols-outlined" id="menU">
+                    menu
+                    </span></label>
+            <div class="menu">
+            <li class="dropDown">
+            <input type="checkbox" id="check_Drop1" /><label for="check_Drop1">Hosting<span class="material-symbols-outlined" id="hostI">
+                arrow_drop_down
+                </span></label>
+            <ul class="dropdown">
+            <li><a href="/">Web Hosting</a></li>
+            <li><a href="/">Website Builder</a></li>
+            <li><a href="/">Cloud Hosting</a></li>
+            <li><a href="/">Hosting for Professionals</a></li>
+            </ul>
+            </li>
+            <li class="dropDown">
+                <input type="checkbox" id="check_Drop2"/><label for="check_Drop2">VPS<span class="material-symbols-outlined" id="vpS">
+                    arrow_drop_down
+                    </span></label>
+            <ul class="dropdown">
+            <li><a href="/">VPS Hosting</a></li>
+            <li><a href="/">Cyber Panel Hosting</a></li>
+            <li><a href="/">MineCraft Cyber Hosting</a></li>
+            </ul>
+            </li>
+            <li class="dropDown">
+                <input type="checkbox" id="check_Drop3"/><label for="check_Drop3">Email<span class="material-symbols-outlined" id="Email">
+                    arrow_drop_down
+                    </span></label>
+            <ul class="dropdown">
+            <li><a href="/">Google Workspace Email Hosting</a></li>
+            <li><a href="/">Buisness Email</a></li>
+            </ul>
+            </li>
+            <li class="dropDown">
+                <input type="checkbox" id="check_Drop4"/><label for="check_Drop4">Domain<span class="material-symbols-outlined" id="domaIn">
+                    arrow_drop_down
+                    </span></label>
+            <ul class="dropdown">
+            <li><a href="/">Domain Transfer</a></li>
+            <li><a href="/">WHOis LookUp</a></li>
+            <li><a href="/">Domain Name Search</a></li>
+            </ul>
+            </li>
+            <li class="btn"><i class="fa fa-key"></i> LOG IN</li>
+        </ul>
+        
+            </div>
+            <script>
+                let ct=document.getElementById("checkbox_toggle")
+                let haM=document.getElementById("menU")
+                let c1=document.getElementById("check_Drop1");
+                let c2=document.getElementById("check_Drop2");
+                let c3=document.getElementById("check_Drop3");
+                let c4=document.getElementById("check_Drop4");
+                let i1=document.getElementById("hostI");
+                let i2=document.getElementById("vpS");
+                let i3=document.getElementById("Email");
+                let i4=document.getElementById("domaIn");
+                    ct.addEventListener('change',(event)=>{
+                        if(ct.checked){
+                            haM.innerHTML='close'
+                        }
+                        else 
+                        haM.innerHTML='menu'
+                    });
+                    c1.addEventListener('change',(event)=>{ c2.checked=false;
+                                                            c3.checked=false;
+                                                            c4.checked=false;
+                                                            i1.innerHTML='arrow_drop_up';
+                                                            i2.innerHTML='arrow_drop_down';
+                                                            i3.innerHTML='arrow_drop_down';
+                                                            i4.innerHTML='arrow_drop_down';
+                                                            console.log(event.target);});
+                    c2.addEventListener('change',(event)=>{ c1.checked=false;
+                                                            c3.checked=false;
+                                                            c4.checked=false;
+                                                            i2.innerHTML='arrow_drop_up';
+                                                            i1.innerHTML='arrow_drop_down';
+                                                            i3.innerHTML='arrow_drop_down';
+                                                            i4.innerHTML='arrow_drop_down';
+                                                            console.log(event.target);});
+                    c3.addEventListener('change',(event)=>{ c2.checked=false;
+                                                            c1.checked=false;
+                                                            c4.checked=false;
+                                                            i3.innerHTML='arrow_drop_up';
+                                                            i1.innerHTML='arrow_drop_down';
+                                                            i2.innerHTML='arrow_drop_down';
+                                                            i4.innerHTML='arrow_drop_down';
+                                                            console.log(event.target);});
+                    c4.addEventListener('change',(event)=>{ c2.checked=false;
+                                                            c3.checked=false;
+                                                            c1.checked=false;
+                                                            i4.innerHTML='arrow_drop_up';
+                                                            i1.innerHTML='arrow_drop_down';
+                                                            i3.innerHTML='arrow_drop_down';
+                                                            i2.innerHTML='arrow_drop_down';
+                                                            console.log(event.target);});
+                    window.addEventListener('scroll',(event)=>{
+                        if(ct.checked){
+                            ct.checked=false
+                            haM.innerHTML='menu'
+                        }
+                    })
+                     window.onclick=(event)=>{
+                        if (event.target!=c1){
+                            c1.checked=false;
+                            i1.innerHTML='arrow_drop_down';
+                            i2.innerHTML='arrow_drop_down';
+                            i3.innerHTML='arrow_drop_down';
+                            i4.innerHTML='arrow_drop_down'
+                        }
+                        if (event.target!=c2)
+                        {
+                            c2.checked=false;
+                            i1.innerHTML='arrow_drop_down';
+                            i2.innerHTML='arrow_drop_down';
+                            i3.innerHTML='arrow_drop_down';
+                            i4.innerHTML='arrow_drop_down'
+                        }
+                        if (event.target!=c3)
+                        {
+                            c3.checked=false;
+                            i1.innerHTML='arrow_drop_down';
+                            i2.innerHTML='arrow_drop_down';
+                            i3.innerHTML='arrow_drop_down';
+                            i4.innerHTML='arrow_drop_down'
+                        }
+                        if (event.target!=c4)
+                        {
+                            c4.checked=false;
+                            i1.innerHTML='arrow_drop_down';
+                            i2.innerHTML='arrow_drop_down';
+                            i3.innerHTML='arrow_drop_down';
+                            i4.innerHTML='arrow_drop_down'
+                        }
+                    }
+                
+            </script>
+    </nav>
+    <section class="hero">
+        <ul class="totalUl">
+            <li class="offers">
+                <ul class="offerUl">
+                    <li>
+                        <ul class="heading">
+                            <li class="mainHead">Everything You Need to Create a Website</li>
+                            <li class="subHead">Up to <span class="lightPurple">75%</span> off Hosting</li>
+                        </ul>
+                    </li>
+                    <li class="activitiesL">
+                        <ul class="activities">
+                            <li class="items"><span class="material-symbols-outlined coloringI">
+                            language
+                            </span> Free Domain <span class="material-symbols-outlined que">
+                            help
+                            </span></li>
+                            <li class="items"><span class="material-symbols-outlined coloringI">
+                            headset_mic
+                            </span> 24/7 Customer Support</li>
+                        </ul>
+                    </li>
+                    <li class="paymentL">
+                        <ul class="payment">
+                            <li class="plan"><span class="material-symbols-outlined curr">
+                            currency_rupee
+                            </span><span class="money">149.00</span><span class="specifyM">/month</span></li>
+                            <li class="duration">+ 2 months Free</li>
+                        </ul>
+                    </li>
+                    <li class="lastT">
+                        <ul class="timeT">
+                            <li class="timer">
+                            <div id="days" class="timerElements">21</div>:<div id="hours" class="timerElements">06</div>:<div id="minutes" class="timerElements">32</div>:<div id="seconds" class="timerElements">12</div>
+                            </li>
+                            <li class="btnEx"><button class="sendBtn">Claim Deal</button></li>
+                        </ul>
+                    </li>
+                    <li class="lastTouch"><span class="material-symbols-outlined bp">
+                        backpack
+                        </span> Benefit from an exclusive 30-day money-back guarantee</li>
+                </ul>
+            </li>
+            <li class="picture"><img src="./homepage-hero-2x.webp" height="500px"></li>
+        </ul>
+        <script>
+            let fdate= new Date('apr 3, 2023 10:00:00').getTime();
+            var x=setInterval(function(){
+            let now=new Date().getTime();
+            let diff=fdate-now;
+            let days=Math.floor((diff/86400000));
+            let hours=Math.floor((diff%(60*60*1000*24)/(1000*60*60)));
+            let mins=Math.floor((diff%(60*60*1000)/(1000*60)));
+            let secs=Math.floor((diff%(60*1000)/(1000)));
+            console.log(secs);
+            document.getElementById('days').innerHTML=days;
+            document.getElementById('hours').innerHTML=hours;
+            document.getElementById('minutes').innerHTML=mins;
+            document.getElementById('seconds').innerHTML=secs;
+        },1000);
+        </script>
+    </section>
+</body>
+</html>
