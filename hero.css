@@ -8,6 +8,7 @@
     margin-top: 60px;
     margin-left: 70px;
     margin-right: 70px;
+    padding-bottom: 4rem;
 }
 .hero .totalUl{
     display: flex;
@@ -98,16 +99,17 @@
     background-color: #674CC4;
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 19px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
     border: none;
     border-radius: 2px;
     box-shadow: #2a2929 0px 0px 2px 0px,#2a2929 0px 0px 4px 0px;
 }
 
 .lastT .timeT .btnEx .sendBtn:hover{
-    background-color: #533ca9;
+    background-color: #5e45b9;
+    box-shadow: #2f2c2c 0px 0px 5px 0px,#2f2c2c 0px 0px 10px 0px;
 }
 .bp{
     color: rgb(0, 0, 82);

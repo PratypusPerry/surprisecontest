@@ -1,0 +1,133 @@
+footer{
+    background-color: #eeebf9f2;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    padding-top: 0px;
+}
+footer .footElems .felemF .logof img{
+    height: 100px;
+}
+footer .footElems{
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    /* max-width: 500px; */
+}
+footer .footElems .felemF{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+footer .footElems .felemF .des{
+    max-width: 400px;
+    padding-bottom: 1rem;
+}
+footer .footElems .felemF .paymentLogos .pmethods{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+}
+footer .footElems .felemF .paymentLogos .pmethods li img{
+    border: 1px solid #674CC4;
+}
+.footElems .dropDownf{
+    padding-top: 2rem;
+}
+.footElems .dropDownf label{
+    font-size: 25px;
+    color: rgb(0, 0, 82);
+    padding-bottom: 5px;
+    /* height: 10px; */
+    display: block;
+}
+.footElems .dropDownf input[type='checkbox']{
+    display: none;
+}
+.footElems .dropDownf .icon{
+    display: none;
+    /* left: 3rem;
+    top: -12.5px;
+    position: relative; */
+}
+.dropdownf {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.footElems .dropDownf .dropdownf li a:hover{
+    text-decoration: underline;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 0.15rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+.socials li{
+    padding: 0.15rem;
+}
+svg{
+    height: 20px;
+    fill: #674CC4;
+    cursor: pointer;
+}
+svg:hover{
+    fill: #453582;
+}
+.finishText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40rem;
+    padding-top: 3px;
+}
+.finishText li{
+    color: #453582;
+}
+@media (max-width: 1110px)  {
+    footer{
+        justify-content: center;
+    }
+    footer .footElems{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+    svg{
+        height: 20px;
+    }
+    .finishText{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 1rem;
+        padding-top: 3px;
+    }
+    .socials{
+        justify-content: center;
+    }
+    footer .footElems .felemF{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+    footer .footElems .felemF .paymentLogos .pmethods{
+        padding-bottom: 2rem;
+    }
+    footer .footElems .felemF .logof img{
+        height: 70px;
+    }
+}

@@ -114,15 +114,21 @@ a{
     }
    
     .btn{
-        padding: 0;
+        position: relative;
         border: solid 1px #674CC4;
-        border-radius: 5px;
-        /* border: none; */
-        /* background-color: #fff; */
+        border-radius: 3px;
         color: #674CC4;
-        font-weight: 1000;
-        padding:2px;
+        font-weight: 700;
         cursor: pointer;
+        display: flex;
+        width: 80px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        min-height: 48px;
+        line-height: 1;
+        background-color: #fff;
+        font-size: 15px;
     }
     .btn:hover{
         transition: 0s;
@@ -149,7 +155,8 @@ a{
             
 
             .menu { 
-                display:none;
+                display:flex;
+                flex-direction: column;
                 position: absolute;
                 background-color:#fff;
                 right: 0;
@@ -157,7 +164,8 @@ a{
                 text-align: center;
                 padding: 16px 0;
                 box-shadow: #2a2929 0px 0px 2px 0px,#2a2929 0px 0px 4px 0px;
-                justify-content: left;
+                justify-content: center;
+                display: none;
                 }
             .menu li:hover {
                 display: inline-block;
@@ -192,19 +200,8 @@ a{
             .dropdown li:hover {
                 background-color: #fff;
                 }
-                button{
-                    border: solid 1px #674CC4;
-                    background-color: #fff;
-                    color: #674CC4;
-                    font-weight: 1000;
-                    border-radius: 5px;
-                    padding: 2px;
-                }
-                button:hover{
-                    background-color: #fff;
-                    border: none;
-                }
                 .btn{
-                    border: none;
+                    margin-left:35% ;
+                    margin-top: 200%;
                 }
             }
